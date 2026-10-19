@@ -1,0 +1,42 @@
+# ---------- Environnement Python ----------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- Données Kaggle (lourdes, et soumises à licence) ----------
+data/raw/*.csv
+data/processed/
+data/synthetic/
+
+# ---------- Fichiers produits par les scripts ----------
+outputs/
+models/
+submission*.csv
+*.joblib
+*.pkl
+
+# ---------- Secrets et configuration locale ----------
+.env
+kaggle.json
+
+# ---------- Éditeur et système ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Suivi d'expériences (si vous les utilisez plus tard) ----------
+mlruns/
+wandb/
+catboost_info/
+lightning_logs/
